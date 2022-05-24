@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Custom cursor </title>
+<link rel="stylesheet" href="cursorl.css">
+</head>
+<body>
+
+     <div class="cursor"></div>
+     <div class="cursor-lazy"></div>
+	 
+	 <script>
+	 
+	"use strict";
+	(function (){
+	  var cursor = document.querySelector('.cursor');
+	  var cursorLazy = document.querySelector('.cursor-lazy');
+	  var links = document.querySelectorAll('a');
+	  
+	  var editCursor = function editcursor(event){
+	      cursor.style.left = event.clientX + 'px';
+		  cursor.style.top = event.clientY + 'px';
+		  cursorLazy.style.left = event.clientX + 'px';
+		  cursorLazy.style.top = event.clientY + 'px';
+		  };
+		  
+		  window.addEventListener('mousemove', editCursor);
+		  })();
+		  
+		  
+		  
+		  
+		 </script>
+		 <a href="bigbang.html">
+		 <button class="btn btn1">Hover ever</button>
+		 </a>
+		 
+		 
+<div class="container">
+  <button>Click Me </button>
+</div>
+</div>
+	 
+
+
+
+
+</body>
+
+</html>	

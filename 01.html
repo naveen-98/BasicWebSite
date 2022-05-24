@@ -1,0 +1,407 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Edu First Home</font></title>
+<style type="text/css">
+
+body{
+	margin:0;
+	background-size: cover;
+	background-image:url(com.jpg);
+	background-attachment: fixed;
+	font:600 16px/18px 'Open Sans',sans-serif;
+}
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+.login-wrap{
+	width:75%;
+	margin:auto;
+	max-width:500px;
+	min-height:670px;
+	position:relative;
+	background:(none) no-repeat center;
+	box-shadow:0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+}
+.login-html{
+	width:100%;
+	height:100%;
+	position:absolute;
+	padding:90px 70px 50px 70px;
+	background:rgba(40,57,101,.9);
+}
+.login-html .sign-in-htm,
+.login-html .sign-up-htm{
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	position:absolute;
+	transform:rotateY(180deg);
+	backface-visibility:hidden;
+	transition:all .4s linear;
+}
+.login-html .sign-in,
+.login-html .sign-up,
+.login-form .group .check{
+	display:none;
+}
+.login-html .tab,
+.login-form .group .label,
+.login-form .group .button{
+	text-transform:uppercase;
+}
+.login-html .tab{
+	font-size:22px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-html .sign-in:checked + .tab,
+.login-html .sign-up:checked + .tab{
+	color:#fff;
+	border-color:#1161ee;
+}
+.login-form{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style:preserve-3d;
+}
+.login-form .group{
+	margin-bottom:15px;
+}
+.login-form .group .label,
+.login-form .group .input,
+.login-form .group .button{
+	width:100%;
+	color:#fff;
+	display:block;
+}
+.login-form .group .input,
+.login-form .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group input[data-type="password"]{
+	text-security:circle;
+	-webkit-text-security:circle;
+}
+.login-form .group .label{
+	color:#aaa;
+	font-size:12px;
+}
+.login-form .group .button{
+	background:#1161ee;
+}
+.login-form .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background:rgba(255,255,255,.1);
+}
+.login-form .group label .icon:before,
+.login-form .group label .icon:after{
+	content:'';
+	width:5px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	transition:all .2s ease-in-out 0s;
+}
+.login-form .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-form .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-form .group .check:checked + label{
+	color:#fff;
+}
+.login-form .group .check:checked + label .icon{
+	background:#1161ee;
+}
+.login-form .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-form .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-html .sign-in:checked + .tab + .sign-up + .tab + .login-form .sign-in-htm{
+	transform:rotate(0);
+}
+.login-html .sign-up:checked + .tab + .login-form .sign-up-htm{
+	transform:rotate(0);
+}
+
+.hr{
+	height:2px;
+	margin:60px 0 50px 0;
+	background:rgba(255,255,255,.2);
+}
+.foot-lnk{
+	text-align:center;
+}
+
+
+
+.button{
+        margin-left: 15px;
+        border: 5px outset #66ccff;
+        width: 100px;
+        padding: 3px 15px;
+        color: #013320;
+    }
+
+form{
+       border: 2px;
+       float: right;
+        }
+
+
+h1{color: #50C878
+}
+
+h2{color: #50C878
+}
+
+button {
+  padding: 12px 20px;
+  font-size: 2rem;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+  border: 2px solid #3498db;
+  outline: Green;
+  font-family: "Montserrat";
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+
+}
+
+.btn1,.btn2{
+	color: #6edb34;
+}
+.btn3,.btn4{
+	color: #6edb34;
+}
+.btn1:hover,.btn2:hover{
+	color: #ff0000;
+}
+.btn3:hover,.btn4:hover{
+	color: #ff0000;
+}
+.btn::before{
+	content:"";
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: none;
+	z-index: -1;
+	transition: 0.8s;
+}
+
+.btn1::before,.btn3::before{
+	top: 0;
+	border-radius: 0 0 50% 50%  ;
+}
+.btn2::before,.btn4::before{
+	bottom: 0;
+	border-radius:  50% 50% 0 0 ;
+}
+.btn1::before,.btn3::before{
+	height: 180%
+}
+.btn1:hover::before,.btn3:hover::before{
+	height: 0%;
+}
+.btn2:hover::before,.btn4:hover::before{
+	height: 180%;
+}
+
+
+ #flright{
+        float: left-side;
+        width: 485px;
+        height: 255px;
+        margin-right: 50px;
+    }
+
+
+
+
+<!-- Contact form !-->
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 45%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 100px;
+  background-color: none;
+  padding: 5px;
+}
+
+#box{
+        float: left-side;
+        width: 20%;
+        height: 300px;
+        margin-right: 35px;
+        margin-top: 15px;
+        padding: 5px 30px;
+        background-color: none;
+        font-size: 14pt;
+        line-height: 100%;
+    }
+
+</style>
+</head>
+
+
+
+
+
+<h1 style="font-size: 80px;"><marquee behavior ="alternate" style= "line-height :80px;">Edu First </marquee></h1>
+
+<h2 style="font-size: 40px;">
+ <a href="01.html">
+		 <button class="btn btn1">Home</button>
+		 </a>
+
+<a href="03.html">
+		 <button class="btn btn2">Cyber Security</button>
+		 </a>
+
+<a href="02.html">
+		 <button class="btn btn3">Ethical Hacking</button>
+		 </a>
+
+<a href="04.html">
+		 <button class="btn btn4">About</button>
+		 </a>
+
+		 </h2>
+
+		 <hr>
+
+
+<div class="login-wrap">
+	<div class="login-html">
+		<input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+		<div class="login-form">
+			<div class="sign-in-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<input id="check" type="checkbox" class="check" checked>
+					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+				</div>
+				<div class="group"><a href="bigbang.html">
+
+					<input type="submit" class="button" value="Sign In">
+					</a>
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<a href="robot.html">Forgot Password?</a>
+				</div>
+			</div>
+
+
+			<div class="sign-up-htm">
+				<div class="group">
+					<label for="user" class="label">Username</label>
+					<input id="user" type="text" class="input">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Repeat Password</label>
+					<input id="pass" type="password" class="input" data-type="password">
+				</div>
+				<div class="group">
+					<label for="pass" class="label">Email Address</label>
+					<input id="pass" type="text" class="input">
+				</div>
+				<div class="group"><a href="bigbang.html">
+
+					<input type="submit" class="button" value="Sign Up">
+					</a>
+				</div>
+				<div class="hr"></div>
+				<div class="foot-lnk">
+					<label for="tab-1">Already Member?</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="hr"></div>
+            <aside id="box">
+                <h4><font color ="white" face = " Algerian" >Contact us</font></h4>
+
+                <p><font color ="white" face = " Algerian" >Ask for suggestions and allegations.</font></p>
+
+                <dl><font color ="white" face = " Algerian" >
+                    <dt>Gmail Address</dt>
+                    <dd>naveemayantha@gmail.com</dd><br>
+                        <dt> Phone Number</dt>
+                        <dd>081 1199821</dd>
+                </font></dl>
+            </aside>
+
+
+
+
+</body>
+</html>
